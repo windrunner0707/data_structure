@@ -1,7 +1,9 @@
+package linear_list;
+
 import java.util.Arrays;
 
 /**
- * 自定义线性表,模仿ArrayList
+ * 自定义线性表顺序存储结构,模仿ArrayList
  * @param <T>
  */
 public class SequenceList<T> {
@@ -49,7 +51,7 @@ public class SequenceList<T> {
 
     //根据索引获取元素
     public T get(int i){
-        if(i < 0 || i >size -1){
+        if(i < 0 || i > size -1){
             throw new IndexOutOfBoundsException("线性表索引越界");
         }
         return (T)elementData[i];
