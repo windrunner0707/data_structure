@@ -1,6 +1,9 @@
 import linear_list.DuLinkList;
 import linear_list.LinkList;
 import linear_list.SequenceList;
+import stack_and_queue.SequenceStack;
+
+import javax.sound.midi.Sequence;
 
 public class Main {
 
@@ -29,14 +32,13 @@ public class Main {
         System.out.println(list2);
         System.out.println(list2.locate("c"));*/
 
-        DuLinkList<String> list3 = new DuLinkList<>();
-        list3.add("a");
-        list3.add("b");
-        list3.add("c");
-        list3.insert("d",1);
-        System.out.println(list3);
-        list3.delete(2);
-        System.out.println(list3);
-        System.out.println(list3.locate("c"));
+/*        SequenceStack<String> stack = new SequenceStack<>();
+        stack.push("a");
+        stack.push("b");
+        stack.push("c");
+        stack.push("d");
+        System.out.println(stack);
+        System.out.println(stack.pop());
+        System.out.println(stack);*/
     }
 }
